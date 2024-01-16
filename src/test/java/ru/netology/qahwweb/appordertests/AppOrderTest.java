@@ -12,7 +12,6 @@ public class AppOrderTest {
     @Test
     void shouldCreateRequestPositivePath() {
         open("http://localhost:9999");
-
         SelenideElement form = $("[class='form form_size_m form_theme_alfa-on-white']");
         form.$("[data-test-id=name] input").setValue("Анна Шевченко");
         form.$("[data-test-id=phone] input").setValue("+79960000000");
